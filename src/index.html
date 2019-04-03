@@ -6,8 +6,38 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
+    <div id="saludo">
+      <h1>¡Hola!</h1>
+    </div>
+    <br>
+    <div id="definición">
+      <h2>¿Sabes que es el cifrado cesar?</h2>
+      <p>Cuando hablamos de cifrado cesar mueve cada letra un determinado
+        número de espacios(offset) en el alfabeto. por ejemplo si usamos un desplazamiento u
+        offset de tres espacios la trea A se convierte en la letra D en el texto codificado</p>
+    </div>
+    <br>
+    <div id="mensaje">
+      <h3>¿Que deseas cifrar o descifrar?</h3>
+      <input type= "text" name="offset" id="mensaje">
+    </div>
+    <br>
+
+      <h4>¿En cuantos offset quieres cifrar o descifrar tu mensaje?</h4>
+      <form>
+
+      <input type="number" min="1" name="offset" id="espacios">
+      <button type="button" id="cifrar">cifrar</button>
+        <button type="button" id="descifrar">descifrar</button>
+    </form>
+    <br>
+    <div id="resultado">
+      <p>Tu mensaje es...</p>
+
+    </div>
+    <br>
+    <div id="reinicio">
+      <button type="button" id="limpiar">limpiar</button>
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>

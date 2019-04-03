@@ -1,0 +1,21 @@
+//primero --variable que va a obtener el mensaje cifrado--es lo que se va a mostrar--variable vacía
+//El mensaje ingreso el usuario -- debería iterarse for(iniciador; punto de parada; incrementador)
+//tercero las letras se transformen en codigo ascii---variable=mensajequeiteramos.charCodeAt();
+//creamos la condiciones-- if(mayusculas)
+        //mover estas letras que estan en código asccii la cantidad de espacios que nos indique el offset
+        //volver a convertir la posición de las letras en letras--aquí el texto está cifrado...pero no visible
+        //el texto cifrado lo agregamos a la variable vacía (variable del primer paso)
+//deberíamos visualizar el texto, le pedimos que nos retorne la variable (con el texto codificado)
+//fin
+//formula: (x-65+n)%26+65
+//\\
+
+
+let msnCifrado="nuevaLetra"
+for(let i=0; i<=mensaje.legnth; i++){
+let numeroAscii=mensaje.charCodeAt(0);
+if(numeroAscii >=65 && numeroAscii<=90){
+let formula= (numeroAscii- 65+offset)&26+65
+let nuevaLetra= string.fromCharCode(formula)
+}
+}
