@@ -8,7 +8,7 @@ window.cipher = {
     mnsCifrado =msnCifrado + String.fromCharCode(formula);
     //msnCifrado= aqui va todas mis nuevas letras juntas(concatenadas)
     //.concat o += o =+ 
-    console.log(mnsCifrado)
+    //console.log(mnsCifrado)
     }
     }
 return msnCifrado
@@ -29,13 +29,13 @@ return msnCifrado
 
 
   decode: () => {
-    let msnDescifrado="";
+    let msnDescifrado ="";
     for(let i=0; i<=mensaje.length; i++){
     let numeroAscii=mensaje.charCodeAt(0);
     if(numeroAscii >=65 && numeroAscii<=90){
     let formula= (numeroAscii+ 65-parseInt(offset))&26+65;
     let msnDescifrado= msnDescifrado + string.fromCharCode(formula);
-    console.log(hola)
+   // console.log(hola)
   }
     }
   }
