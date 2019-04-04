@@ -29,8 +29,8 @@ return msnCifrado
 
 
   decode: () => {
-    let msnDescifrado= nuevaLetra;
-    for(let i=0; i<=mensaje.legnth; i++){
+    let msnDescifrado="";
+    for(let i=0; i<=mensaje.length; i++){
     let numeroAscii=mensaje.charCodeAt(0);
     if(numeroAscii >=65 && numeroAscii<=90){
     let formula= (numeroAscii+ 65-parseInt(offset))&26+65;
