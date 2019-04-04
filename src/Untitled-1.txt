@@ -1,3 +1,4 @@
+cipher.js
 //primero --variable que va a obtener el mensaje cifrado--es lo que se va a mostrar--variable vacía
 //El mensaje ingreso el usuario -- debería iterarse for(iniciador; punto de parada; incrementador)
 //tercero las letras se transformen en codigo ascii---variable=mensajequeiteramos.charCodeAt();
@@ -19,3 +20,8 @@ let formula= (numeroAscii- 65+offset)&26+65
 let nuevaLetra= string.fromCharCode(formula)
 }
 }
+
+index.js;
+declarar las funciones
+de cada accion que quiero que haga
+

@@ -1,17 +1,21 @@
 window.cipher = {
   encode: (mensaje, offset) => {
-    let msnCifrado= nuevaLetra;
-    for(let i=0; i<=mensaje.legnth; i++){
-    let numeroAscii=mensaje.charCodeAt(0);
+    let msnCifrado = "";
+    for(let i=0; i<=mensaje.length; i++){
+    let numeroAscii=mensaje[i].charCodeAt(0);
     if(numeroAscii >=65 && numeroAscii<=90){
     let formula= (numeroAscii-65+parseInt(offset))&26+65;
-    let nuevaLetra= string.fromCharCode(formula);
-    console.log(msnCifrado)
+    mnsCifrado =msnCifrado + String.fromCharCode(formula);
+    //msnCifrado= aqui va todas mis nuevas letras juntas(concatenadas)
+    //.concat o += o =+ 
+    console.log(mnsCifrado)
     }
     }
+return msnCifrado
+  }
 
-
-
+  }
+//var uevo text
 /*for (let i = 0; i < mensaje.length; i++) {
   let letraAscii = mensaje[i].charCodeAt(0);
   console.log(letraAscii)
@@ -21,23 +25,17 @@ window.cipher = {
   }
   console.log(nuevaLetra)
 }*/
-}
+
 
 
   decode: () => {
-    let msnCifrado= nuevaLetra;
+    let msnDescifrado= nuevaLetra;
     for(let i=0; i<=mensaje.legnth; i++){
     let numeroAscii=mensaje.charCodeAt(0);
     if(numeroAscii >=65 && numeroAscii<=90){
     let formula= (numeroAscii+ 65-parseInt(offset))&26+65;
-    let nuevaLetra= string.fromCharCode(formula);
-    console.log(msnCifrado)
+    let msnDescifrado= msnDescifrado + string.fromCharCode(formula);
+    console.log(hola)
   }
-};
-
-//FORMULA: (x+n)%26
-//de letra a ascii charCodeAt
-//de ascii a letra fromChardCode
-//iteración (i)es ir de uno en uno
-// 65 a 90 mayúsculas
-//ciclo es...(de letra a ascii)-(ascii a formula)-(nuevo ascii a letra)
+    }
+  }
