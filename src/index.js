@@ -1,13 +1,29 @@
+//const mensajeTextArea= document.getElementById("mensaje1").value;
+const espacios= document.getElementById("espacios");
+//const btnCifrar= document.getElementById("cifrar");
+//const btnDescifrar= document.getElementById("descifrar");
+//const containerResultado= document.getElementById("mensaje_nuevo");
 
-/*let mensaje= document.getElementById("mensaje");
-let mensajeNuevo= document.getElementById("mensajeNuevo");
-let espacios= document.getElementById("espacios");*/
 
-let cifrar= document.getElementById("cifrar")
+
+document.getElementById("cifrar").addEventListener('click', () =>{
+    let mensaje= document.getElementById("mensaje1").value.toUpperCase();
+    let offset= parseInt(document.getElementById("espacios").value);
+    document.getElementById("mensaje_nuevo").innerHTML = window.cipher.encode(offset, mensaje);
+});
+
+document.getElementById("descifrar").addEventListener('click', () =>{
+    let mensaje= document.getElementById("mensaje1").value;
+    let offset=parseInt(document.getElementById("espacios").value);
+    
+     document.getElementById("mensaje_nuevo").innerHTML = window.cipher.decode(offset, mensaje);
+});
+
+/*let btncifrar= document.getElementById("cifrar")
     cifrar.addEventListener("click", () => {
     let mensaje = document.getElementById("mensaje");
     let espacios= document.getElementById("espacios");
-    let mensajeNuevo= document.getElementById("mensajeNuevo");
+    let = document.getElementById("mensajeNuevo");
     if(mensajeNuevo !=""){
         let mensajeNuevo= cipher.encode
     }
