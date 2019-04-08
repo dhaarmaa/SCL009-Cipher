@@ -1,11 +1,12 @@
 //const mensajeTextArea= document.getElementById("mensaje1").value;
-const espacios= document.getElementById("espacios");
+//const espacios= document.getElementById("espacios");
 //const btnCifrar= document.getElementById("cifrar");
 //const btnDescifrar= document.getElementById("descifrar");
 //const containerResultado= document.getElementById("mensaje_nuevo");
 
 
-
+//addEventListeneer() es un escuchardor y funciona a la vez
+//()=> funcion arrow
 document.getElementById("cifrar").addEventListener('click', () =>{
     let mensaje= document.getElementById("mensaje1").value.toUpperCase();
     let offset= parseInt(document.getElementById("espacios").value);
@@ -18,6 +19,16 @@ document.getElementById("descifrar").addEventListener('click', () =>{
     
      document.getElementById("mensaje_nuevo").innerHTML = window.cipher.decode(offset, mensaje);
 });
+
+let btnlimpiar= document.getElementById("limpiar");//document.getelemntbyid(trae el documento)
+/*document.getElementById("limpiar").addEventListener('click', () =>{
+});*/
+btnlimpiar.addEventListener('click', () =>{
+    document.getElementById("espacios").value="";//esto declara que este vacio
+    document.getElementById("mensaje1").value= "";
+    document.getElementById("mensaje_nuevo").value="";
+})
+
 
 /*let btncifrar= document.getElementById("cifrar")
     cifrar.addEventListener("click", () => {

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline|Monoton|Orbitron');
+
+body {
+	background: url(block.png);
+	text-align:center;
+	font-size: 150%;
+	/*font-family: 'Fascinate Inline', cursive;
+	font-family: 'Fascinate Inline', cursive;*/
+	font-family: 'Orbitron', sans-serif;
+    /*font-family: 'Monoton', cursive;*/
+}
+
+#saludo{
+	/*font-family: 'Monoton', cursive;*/
+	font-size:200%; 
+	color:white;
+    position:center;
+    width:100%;
+	height:100%;
+	text-align:center;
+}
+
+h2{
+    color:white;
+    position:center;
+    size:"30";
+    width:100%;
+	height:100%;
+	text-align:center;   
+}
+
+p{
+    color:white;
+	position:center;
+    width:100%;
+	height:100%;
+	text-align:center;
+}
+h3{
+    color:white;
+	position:center;
+    width:100%;
+	height:100%;
+	text-align:center;
+}
+
+h4{
+    color:white;
+	position:center;
+    width:100%;
+	height:100%;
+	text-align:center;
+}
+#cifrar{
+	font-family: 'Orbitron', sans-serif;
+}
+#descifrar{
+	font-family: 'Orbitron', sans-serif;
+}
+#limpiar{
+	font-family: 'Orbitron', sans-serif;
+}
+#resultado{
+    color:white;
+	position:center;
+    width:100%;
+	height:100%;
+	text-align:center;
+}
