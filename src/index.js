@@ -20,14 +20,14 @@ document.getElementById("descifrar").addEventListener('click', () =>{
      document.getElementById("mensaje_nuevo").innerHTML = window.cipher.decode(offset, mensaje);
 });
 
-let btnlimpiar= document.getElementById("limpiar");//document.getelemntbyid(trae el documento)
+//let btnlimpiar= document.getElementById("limpiar");//document.getelemntbyid(trae el documento)
 /*document.getElementById("limpiar").addEventListener('click', () =>{
 });*/
-btnlimpiar.addEventListener('click', () =>{
+/*btnlimpiar.addEventListener('click', () =>{
     document.getElementById("espacios").value="";//esto declara que este vacio
     document.getElementById("mensaje1").value= "";
     document.getElementById("mensaje_nuevo").value="";
-})
+})*/
 
 
 /*let btncifrar= document.getElementById("cifrar")
@@ -76,3 +76,4 @@ let mensajeNuevo= document.getElementById("mensajeNuevo").value
 const cifrar= document.getElementById("cifrar")
 cifrar.addEventListener("click", () => {
 })*/
+//

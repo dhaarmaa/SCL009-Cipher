@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Fascinate+Inline|Monoton|Orbitron');
 
 body {
-	background: url(block.png);
-	text-align:center;
-	font-size: 150%;
+	background : url(fondo.png);
+	text-align :center;
+	font-size : 150%;
 	/*font-family: 'Fascinate Inline', cursive;
 	font-family: 'Fascinate Inline', cursive;*/
-	font-family: 'Orbitron', sans-serif;
+	font-family : 'Orbitron', sans-serif;
     /*font-family: 'Monoton', cursive;*/
 }
 
