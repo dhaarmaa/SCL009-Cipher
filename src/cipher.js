@@ -32,7 +32,7 @@ return mnsCifrado;
     //console.log(funciona)
     if(numeroAscii >=65 && numeroAscii<=90){
       //aplico la formula 
-    let formula= (numeroAscii + 65 - offset)%26+65;
+    let formula= (numeroAscii - 90 - offset)%26+90;
     //console.log(formula);
     //transformamos los numeros ascii en las nuevas letras con sus posiciones ya cambiadas
      let nuevaLetra= String.fromCharCode(formula);
