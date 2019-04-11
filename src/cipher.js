@@ -24,24 +24,27 @@ return mnsCifrado;
   },
 
   decode: (offset, mensaje) => {
-    let msnDescifrado ="";
-    for(let i=0; i<=mensaje.length; i++){
+    let mnsCifrado ="";
+    for(let i=0; i<mensaje.length; i++){
       //transforma letra en código ascii
     let numeroAscii=mensaje.charCodeAt(i);
     //doy condiciones
+    //console.log(funciona)
     if(numeroAscii >=65 && numeroAscii<=90){
       //aplico la formula 
     let formula= (numeroAscii + 65 - offset)%26+65;
     //console.log(formula);
     //transformamos los numeros ascii en las nuevas letras con sus posiciones ya cambiadas
      let nuevaLetra= String.fromCharCode(formula);
-     msnDescifrado += nuevaLetra;
+     mnsCifrado += nuevaLetra;
     // msnDescifrado = msnDescifrado = String.fromCharCode(formula);
    // console.log(hola)
   }
-  
+  else{
+    mnsCifrado += mensaje[i];
+  }
     }
-    return msnDescifrado;
+    return mnsCifrado;
   }
 };
 //codigo ascii 32 = espacio ( Espacio en blanco )
